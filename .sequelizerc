@@ -1,0 +1,8 @@
+const {resolve} = require('path') //resolve -> auxilia a navegação de pastas independente do sistema que estamos utilizando
+
+
+module.exports ={
+    config: resolve(__dirname, 'src', 'config', 'database.js' ), // __dirname -> aponta para a pasta que estou
+    'models-path': resolve (__dirname, 'src', 'app', 'models'),
+    'migrations-path': resolve(__dirname, 'src', 'database', 'migrations')
+} // avisar para o sequelize onde estão as coisas
