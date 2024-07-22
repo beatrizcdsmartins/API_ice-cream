@@ -15,8 +15,6 @@ class App {
     this.app.use(cors())
     this.middlewares()
     this.routes()
-
-    //
   }
 
   middlewares() {
